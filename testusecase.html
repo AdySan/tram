@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav#nav1{ margin-top: 24px; }
+nav#nav1 > a{ background:#B9E1FF; color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
+nav#nav1 > a:hover{ background: #BBEA00; }
+nav#nav1 > a:active{ background: #EEFFA8; }
+</style>
+<script>
+var bleep1 = new Audio();
+bleep1.src = '500Hz.wav';
+var bleep2 = new Audio();
+bleep2.src = '1K.wav';
+var bleep3 = new Audio();
+bleep3.src = '2K.wav';
+var bleep4 = new Audio();
+bleep4.src = '4K.wav';
+
+</script>
+</head>
+<body>
+  <nav id="nav1">
+    <a href="#" onmousedown="bleep1.play()">500Hz</a>
+    <a href="#" onmousedown="bleep2.play()">1KHz</a>
+    <a href="#" onmousedown="bleep3.play()">2KHz</a>
+    <a href="#" onmousedown="bleep4.play()">4KHz</a>
+  </nav>
+</body>
+</html>
